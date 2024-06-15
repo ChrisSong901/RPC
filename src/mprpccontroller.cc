@@ -1,4 +1,4 @@
-#include"./include/mprpccontroller.h"
+#include"mprpccontroller.h"
 
 //类的构造函数
 MprpcController::MprpcController()

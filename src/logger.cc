@@ -1,20 +1,19 @@
-#include"./include/logger.h"
-#include<string>
+#include"logger.h"
 #include<time.h>
 #include<iostream>
 
 Logger& Logger::GetInstance()
 {
-    Logger logger;
+    static Logger logger;
     return logger;
 }
+
 Logger::Logger()
 {
-    //启动专门的写日志线程,使用lambda表达式
+
     std::thread writeLogTask([&](){
         for(;;)
         {
-            //获取当天的日期，然后去取日志信息，写入相应的日志文件当中
             time_t now=time(nullptr);
             tm *nowtm=localtime(&now);
 
@@ -30,7 +29,6 @@ Logger::Logger()
 
             std::string msg=m_lckQueue.Pop();
 
-            //加入时分秒
             char time_buf[128]={0};
             sprintf(time_buf,"%d:%d:%d => [%s] ",
                     nowtm->tm_hour,
@@ -45,10 +43,11 @@ Logger::Logger()
             fclose(pf);
         }
     });
-    writeLogTask.detach();//设置分离线程。相当于守护线程
+    writeLogTask.detach();
 }
-//设置日志级别
-void Logger::SetLogLevel(LogLevel level)
+
+
+void Logger::StLogLevel(LogLevel level)
 {
     m_loglevel=level;
 }

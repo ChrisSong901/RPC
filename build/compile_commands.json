@@ -1,0 +1,74 @@
+[
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/mprpcapplication.cc.o -c /mprpc/MPRPC1/src/mprpcapplication.cc",
+  "file": "/mprpc/MPRPC1/src/mprpcapplication.cc",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcapplication.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/mprpcconfig.cc.o -c /mprpc/MPRPC1/src/mprpcconfig.cc",
+  "file": "/mprpc/MPRPC1/src/mprpcconfig.cc",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcconfig.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/rpcheader.pb.cc.o -c /mprpc/MPRPC1/src/rpcheader.pb.cc",
+  "file": "/mprpc/MPRPC1/src/rpcheader.pb.cc",
+  "output": "src/CMakeFiles/mprpc.dir/rpcheader.pb.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/rpcprovider.cc.o -c /mprpc/MPRPC1/src/rpcprovider.cc",
+  "file": "/mprpc/MPRPC1/src/rpcprovider.cc",
+  "output": "src/CMakeFiles/mprpc.dir/rpcprovider.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/mprpcchannel.cc.o -c /mprpc/MPRPC1/src/mprpcchannel.cc",
+  "file": "/mprpc/MPRPC1/src/mprpcchannel.cc",
+  "output": "src/CMakeFiles/mprpc.dir/mprpcchannel.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/mprpccontroller.cc.o -c /mprpc/MPRPC1/src/mprpccontroller.cc",
+  "file": "/mprpc/MPRPC1/src/mprpccontroller.cc",
+  "output": "src/CMakeFiles/mprpc.dir/mprpccontroller.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/logger.cc.o -c /mprpc/MPRPC1/src/logger.cc",
+  "file": "/mprpc/MPRPC1/src/logger.cc",
+  "output": "src/CMakeFiles/mprpc.dir/logger.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/src",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/mprpc.dir/zookeeperutil.cc.o -c /mprpc/MPRPC1/src/zookeeperutil.cc",
+  "file": "/mprpc/MPRPC1/src/zookeeperutil.cc",
+  "output": "src/CMakeFiles/mprpc.dir/zookeeperutil.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/example/callee",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/provider.dir/friendservice.cc.o -c /mprpc/MPRPC1/example/callee/friendservice.cc",
+  "file": "/mprpc/MPRPC1/example/callee/friendservice.cc",
+  "output": "example/callee/CMakeFiles/provider.dir/friendservice.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/example/callee",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/provider.dir/__/friend.pb.cc.o -c /mprpc/MPRPC1/example/friend.pb.cc",
+  "file": "/mprpc/MPRPC1/example/friend.pb.cc",
+  "output": "example/callee/CMakeFiles/provider.dir/__/friend.pb.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/example/caller",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/consumer.dir/callfriendservice.cc.o -c /mprpc/MPRPC1/example/caller/callfriendservice.cc",
+  "file": "/mprpc/MPRPC1/example/caller/callfriendservice.cc",
+  "output": "example/caller/CMakeFiles/consumer.dir/callfriendservice.cc.o"
+},
+{
+  "directory": "/mprpc/MPRPC1/build/example/caller",
+  "command": "/usr/bin/g++  -I/mprpc/MPRPC1/src/include -I/mprpc/MPRPC1/example -g -o CMakeFiles/consumer.dir/__/friend.pb.cc.o -c /mprpc/MPRPC1/example/friend.pb.cc",
+  "file": "/mprpc/MPRPC1/example/friend.pb.cc",
+  "output": "example/caller/CMakeFiles/consumer.dir/__/friend.pb.cc.o"
+}
+]

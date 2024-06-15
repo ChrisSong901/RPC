@@ -527,26 +527,26 @@ class LoginResponse final :
   // accessors -------------------------------------------------------
 
   enum : int {
-    kResultFieldNumber = 1,
+    kReslutFieldNumber = 1,
     kSuccessFieldNumber = 2,
   };
-  // .RPC.ResultCode result = 1;
-  bool has_result() const;
+  // .RPC.ResultCode reslut = 1;
+  bool has_reslut() const;
   private:
-  bool _internal_has_result() const;
+  bool _internal_has_reslut() const;
   public:
-  void clear_result();
-  const ::RPC::ResultCode& result() const;
-  PROTOBUF_NODISCARD ::RPC::ResultCode* release_result();
-  ::RPC::ResultCode* mutable_result();
-  void set_allocated_result(::RPC::ResultCode* result);
+  void clear_reslut();
+  const ::RPC::ResultCode& reslut() const;
+  PROTOBUF_NODISCARD ::RPC::ResultCode* release_reslut();
+  ::RPC::ResultCode* mutable_reslut();
+  void set_allocated_reslut(::RPC::ResultCode* reslut);
   private:
-  const ::RPC::ResultCode& _internal_result() const;
-  ::RPC::ResultCode* _internal_mutable_result();
+  const ::RPC::ResultCode& _internal_reslut() const;
+  ::RPC::ResultCode* _internal_mutable_reslut();
   public:
-  void unsafe_arena_set_allocated_result(
-      ::RPC::ResultCode* result);
-  ::RPC::ResultCode* unsafe_arena_release_result();
+  void unsafe_arena_set_allocated_reslut(
+      ::RPC::ResultCode* reslut);
+  ::RPC::ResultCode* unsafe_arena_release_reslut();
 
   // bool success = 2;
   void clear_success();
@@ -565,7 +565,7 @@ class LoginResponse final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::RPC::ResultCode* result_;
+    ::RPC::ResultCode* reslut_;
     bool success_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
@@ -1176,45 +1176,45 @@ inline void LoginRequest::set_allocated_pwd(std::string* pwd) {
 
 // LoginResponse
 
-// .RPC.ResultCode result = 1;
-inline bool LoginResponse::_internal_has_result() const {
-  return this != internal_default_instance() && _impl_.result_ != nullptr;
+// .RPC.ResultCode reslut = 1;
+inline bool LoginResponse::_internal_has_reslut() const {
+  return this != internal_default_instance() && _impl_.reslut_ != nullptr;
 }
-inline bool LoginResponse::has_result() const {
-  return _internal_has_result();
+inline bool LoginResponse::has_reslut() const {
+  return _internal_has_reslut();
 }
-inline void LoginResponse::clear_result() {
-  if (GetArenaForAllocation() == nullptr && _impl_.result_ != nullptr) {
-    delete _impl_.result_;
+inline void LoginResponse::clear_reslut() {
+  if (GetArenaForAllocation() == nullptr && _impl_.reslut_ != nullptr) {
+    delete _impl_.reslut_;
   }
-  _impl_.result_ = nullptr;
+  _impl_.reslut_ = nullptr;
 }
-inline const ::RPC::ResultCode& LoginResponse::_internal_result() const {
-  const ::RPC::ResultCode* p = _impl_.result_;
+inline const ::RPC::ResultCode& LoginResponse::_internal_reslut() const {
+  const ::RPC::ResultCode* p = _impl_.reslut_;
   return p != nullptr ? *p : reinterpret_cast<const ::RPC::ResultCode&>(
       ::RPC::_ResultCode_default_instance_);
 }
-inline const ::RPC::ResultCode& LoginResponse::result() const {
-  // @@protoc_insertion_point(field_get:RPC.LoginResponse.result)
-  return _internal_result();
+inline const ::RPC::ResultCode& LoginResponse::reslut() const {
+  // @@protoc_insertion_point(field_get:RPC.LoginResponse.reslut)
+  return _internal_reslut();
 }
-inline void LoginResponse::unsafe_arena_set_allocated_result(
-    ::RPC::ResultCode* result) {
+inline void LoginResponse::unsafe_arena_set_allocated_reslut(
+    ::RPC::ResultCode* reslut) {
   if (GetArenaForAllocation() == nullptr) {
-    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.result_);
+    delete reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(_impl_.reslut_);
   }
-  _impl_.result_ = result;
-  if (result) {
+  _impl_.reslut_ = reslut;
+  if (reslut) {
     
   } else {
     
   }
-  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:RPC.LoginResponse.result)
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:RPC.LoginResponse.reslut)
 }
-inline ::RPC::ResultCode* LoginResponse::release_result() {
+inline ::RPC::ResultCode* LoginResponse::release_reslut() {
   
-  ::RPC::ResultCode* temp = _impl_.result_;
-  _impl_.result_ = nullptr;
+  ::RPC::ResultCode* temp = _impl_.reslut_;
+  _impl_.reslut_ = nullptr;
 #ifdef PROTOBUF_FORCE_COPY_IN_RELEASE
   auto* old =  reinterpret_cast<::PROTOBUF_NAMESPACE_ID::MessageLite*>(temp);
   temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
@@ -1226,44 +1226,44 @@ inline ::RPC::ResultCode* LoginResponse::release_result() {
 #endif  // !PROTOBUF_FORCE_COPY_IN_RELEASE
   return temp;
 }
-inline ::RPC::ResultCode* LoginResponse::unsafe_arena_release_result() {
-  // @@protoc_insertion_point(field_release:RPC.LoginResponse.result)
+inline ::RPC::ResultCode* LoginResponse::unsafe_arena_release_reslut() {
+  // @@protoc_insertion_point(field_release:RPC.LoginResponse.reslut)
   
-  ::RPC::ResultCode* temp = _impl_.result_;
-  _impl_.result_ = nullptr;
+  ::RPC::ResultCode* temp = _impl_.reslut_;
+  _impl_.reslut_ = nullptr;
   return temp;
 }
-inline ::RPC::ResultCode* LoginResponse::_internal_mutable_result() {
+inline ::RPC::ResultCode* LoginResponse::_internal_mutable_reslut() {
   
-  if (_impl_.result_ == nullptr) {
+  if (_impl_.reslut_ == nullptr) {
     auto* p = CreateMaybeMessage<::RPC::ResultCode>(GetArenaForAllocation());
-    _impl_.result_ = p;
+    _impl_.reslut_ = p;
   }
-  return _impl_.result_;
+  return _impl_.reslut_;
 }
-inline ::RPC::ResultCode* LoginResponse::mutable_result() {
-  ::RPC::ResultCode* _msg = _internal_mutable_result();
-  // @@protoc_insertion_point(field_mutable:RPC.LoginResponse.result)
+inline ::RPC::ResultCode* LoginResponse::mutable_reslut() {
+  ::RPC::ResultCode* _msg = _internal_mutable_reslut();
+  // @@protoc_insertion_point(field_mutable:RPC.LoginResponse.reslut)
   return _msg;
 }
-inline void LoginResponse::set_allocated_result(::RPC::ResultCode* result) {
+inline void LoginResponse::set_allocated_reslut(::RPC::ResultCode* reslut) {
   ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
   if (message_arena == nullptr) {
-    delete _impl_.result_;
+    delete _impl_.reslut_;
   }
-  if (result) {
+  if (reslut) {
     ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
-        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(result);
+        ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(reslut);
     if (message_arena != submessage_arena) {
-      result = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
-          message_arena, result, submessage_arena);
+      reslut = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, reslut, submessage_arena);
     }
     
   } else {
     
   }
-  _impl_.result_ = result;
-  // @@protoc_insertion_point(field_set_allocated:RPC.LoginResponse.result)
+  _impl_.reslut_ = reslut;
+  // @@protoc_insertion_point(field_set_allocated:RPC.LoginResponse.reslut)
 }
 
 // bool success = 2;

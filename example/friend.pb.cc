@@ -37,7 +37,7 @@ struct ResultCodeDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 ResultCodeDefaultTypeInternal _ResultCode_default_instance_;
 PROTOBUF_CONSTEXPR GetFriendListRequest::GetFriendListRequest(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.userid_)*/0
+    /*decltype(_impl_.userid_)*/0u
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct GetFriendListRequestDefaultTypeInternal {
   PROTOBUF_CONSTEXPR GetFriendListRequestDefaultTypeInternal()
@@ -107,7 +107,7 @@ static const ::_pb::Message* const file_default_instances[] = {
 const char descriptor_table_protodef_friend_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
   "\n\014friend.proto\022\003RPC\"-\n\nResultCode\022\017\n\007err"
   "code\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\014\"&\n\024GetFriendL"
-  "istRequest\022\016\n\006userid\030\001 \001(\005\"I\n\025GetFriendL"
+  "istRequest\022\016\n\006userid\030\001 \001(\r\"I\n\025GetFriendL"
   "istResponse\022\037\n\006result\030\001 \001(\0132\017.RPC.Result"
   "Code\022\017\n\007friends\030\002 \003(\0142Z\n\020FriendServiceRp"
   "c\022F\n\rGetFriendList\022\031.RPC.GetFriendListRe"
@@ -385,7 +385,7 @@ inline void GetFriendListRequest::SharedCtor(
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.userid_){0}
+      decltype(_impl_.userid_){0u}
     , /*decltype(_impl_._cached_size_)*/{}
   };
 }
@@ -413,7 +413,7 @@ void GetFriendListRequest::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.userid_ = 0;
+  _impl_.userid_ = 0u;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
@@ -423,7 +423,7 @@ const char* GetFriendListRequest::_InternalParse(const char* ptr, ::_pbi::ParseC
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // int32 userid = 1;
+      // uint32 userid = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
           _impl_.userid_ = ::PROTOBUF_NAMESPACE_ID::internal::ReadVarint32(&ptr);
@@ -460,10 +460,10 @@ uint8_t* GetFriendListRequest::_InternalSerialize(
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // int32 userid = 1;
+  // uint32 userid = 1;
   if (this->_internal_userid() != 0) {
     target = stream->EnsureSpace(target);
-    target = ::_pbi::WireFormatLite::WriteInt32ToArray(1, this->_internal_userid(), target);
+    target = ::_pbi::WireFormatLite::WriteUInt32ToArray(1, this->_internal_userid(), target);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -482,9 +482,9 @@ size_t GetFriendListRequest::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // int32 userid = 1;
+  // uint32 userid = 1;
   if (this->_internal_userid() != 0) {
-    total_size += ::_pbi::WireFormatLite::Int32SizePlusOne(this->_internal_userid());
+    total_size += ::_pbi::WireFormatLite::UInt32SizePlusOne(this->_internal_userid());
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);

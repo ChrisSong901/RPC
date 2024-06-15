@@ -1,0 +1,4 @@
+12:59:8 => [error] first log message!
+12:59:8 => [error] /mprpc/MPRPC/example/callee/friendservice.cc:main:45
+12:59:8 => [info] service_name:FriendServiceRpc
+12:59:8 => [info] method_name:GetFriendList

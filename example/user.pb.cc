@@ -51,7 +51,7 @@ struct LoginRequestDefaultTypeInternal {
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 LoginRequestDefaultTypeInternal _LoginRequest_default_instance_;
 PROTOBUF_CONSTEXPR LoginResponse::LoginResponse(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.result_)*/nullptr
+    /*decltype(_impl_.reslut_)*/nullptr
   , /*decltype(_impl_.success_)*/false
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct LoginResponseDefaultTypeInternal {
@@ -120,7 +120,7 @@ const uint32_t TableStruct_user_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(pro
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::RPC::LoginResponse, _impl_.result_),
+  PROTOBUF_FIELD_OFFSET(::RPC::LoginResponse, _impl_.reslut_),
   PROTOBUF_FIELD_OFFSET(::RPC::LoginResponse, _impl_.success_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::RPC::RegisterRequest, _internal_metadata_),
@@ -160,7 +160,7 @@ const char descriptor_table_protodef_user_2eproto[] PROTOBUF_SECTION_VARIABLE(pr
   "\n\nuser.proto\022\003RPC\"-\n\nResultCode\022\017\n\007errco"
   "de\030\001 \001(\005\022\016\n\006errmsg\030\002 \001(\014\")\n\014LoginRequest"
   "\022\014\n\004name\030\001 \001(\014\022\013\n\003pwd\030\002 \001(\014\"A\n\rLoginResp"
-  "onse\022\037\n\006result\030\001 \001(\0132\017.RPC.ResultCode\022\017\n"
+  "onse\022\037\n\006reslut\030\001 \001(\0132\017.RPC.ResultCode\022\017\n"
   "\007success\030\002 \001(\010\"8\n\017RegisterRequest\022\n\n\002id\030"
   "\001 \001(\r\022\014\n\004name\030\002 \001(\014\022\013\n\003pwd\030\003 \001(\014\"D\n\020Regi"
   "sterResponse\022\037\n\006result\030\001 \001(\0132\017.RPC.Resul"
@@ -658,12 +658,12 @@ void LoginRequest::InternalSwap(LoginRequest* other) {
 
 class LoginResponse::_Internal {
  public:
-  static const ::RPC::ResultCode& result(const LoginResponse* msg);
+  static const ::RPC::ResultCode& reslut(const LoginResponse* msg);
 };
 
 const ::RPC::ResultCode&
-LoginResponse::_Internal::result(const LoginResponse* msg) {
-  return *msg->_impl_.result_;
+LoginResponse::_Internal::reslut(const LoginResponse* msg) {
+  return *msg->_impl_.reslut_;
 }
 LoginResponse::LoginResponse(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
@@ -675,13 +675,13 @@ LoginResponse::LoginResponse(const LoginResponse& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
   LoginResponse* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.result_){nullptr}
+      decltype(_impl_.reslut_){nullptr}
     , decltype(_impl_.success_){}
     , /*decltype(_impl_._cached_size_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_result()) {
-    _this->_impl_.result_ = new ::RPC::ResultCode(*from._impl_.result_);
+  if (from._internal_has_reslut()) {
+    _this->_impl_.reslut_ = new ::RPC::ResultCode(*from._impl_.reslut_);
   }
   _this->_impl_.success_ = from._impl_.success_;
   // @@protoc_insertion_point(copy_constructor:RPC.LoginResponse)
@@ -692,7 +692,7 @@ inline void LoginResponse::SharedCtor(
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.result_){nullptr}
+      decltype(_impl_.reslut_){nullptr}
     , decltype(_impl_.success_){false}
     , /*decltype(_impl_._cached_size_)*/{}
   };
@@ -709,7 +709,7 @@ LoginResponse::~LoginResponse() {
 
 inline void LoginResponse::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.result_;
+  if (this != internal_default_instance()) delete _impl_.reslut_;
 }
 
 void LoginResponse::SetCachedSize(int size) const {
@@ -722,10 +722,10 @@ void LoginResponse::Clear() {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.result_ != nullptr) {
-    delete _impl_.result_;
+  if (GetArenaForAllocation() == nullptr && _impl_.reslut_ != nullptr) {
+    delete _impl_.reslut_;
   }
-  _impl_.result_ = nullptr;
+  _impl_.reslut_ = nullptr;
   _impl_.success_ = false;
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
@@ -736,10 +736,10 @@ const char* LoginResponse::_InternalParse(const char* ptr, ::_pbi::ParseContext*
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // .RPC.ResultCode result = 1;
+      // .RPC.ResultCode reslut = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          ptr = ctx->ParseMessage(_internal_mutable_result(), ptr);
+          ptr = ctx->ParseMessage(_internal_mutable_reslut(), ptr);
           CHK_(ptr);
         } else
           goto handle_unusual;
@@ -781,11 +781,11 @@ uint8_t* LoginResponse::_InternalSerialize(
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // .RPC.ResultCode result = 1;
-  if (this->_internal_has_result()) {
+  // .RPC.ResultCode reslut = 1;
+  if (this->_internal_has_reslut()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
-      InternalWriteMessage(1, _Internal::result(this),
-        _Internal::result(this).GetCachedSize(), target, stream);
+      InternalWriteMessage(1, _Internal::reslut(this),
+        _Internal::reslut(this).GetCachedSize(), target, stream);
   }
 
   // bool success = 2;
@@ -810,11 +810,11 @@ size_t LoginResponse::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .RPC.ResultCode result = 1;
-  if (this->_internal_has_result()) {
+  // .RPC.ResultCode reslut = 1;
+  if (this->_internal_has_reslut()) {
     total_size += 1 +
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.result_);
+        *_impl_.reslut_);
   }
 
   // bool success = 2;
@@ -840,9 +840,9 @@ void LoginResponse::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_result()) {
-    _this->_internal_mutable_result()->::RPC::ResultCode::MergeFrom(
-        from._internal_result());
+  if (from._internal_has_reslut()) {
+    _this->_internal_mutable_reslut()->::RPC::ResultCode::MergeFrom(
+        from._internal_reslut());
   }
   if (from._internal_success() != 0) {
     _this->_internal_set_success(from._internal_success());
@@ -867,9 +867,9 @@ void LoginResponse::InternalSwap(LoginResponse* other) {
   ::PROTOBUF_NAMESPACE_ID::internal::memswap<
       PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.success_)
       + sizeof(LoginResponse::_impl_.success_)
-      - PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.result_)>(
-          reinterpret_cast<char*>(&_impl_.result_),
-          reinterpret_cast<char*>(&other->_impl_.result_));
+      - PROTOBUF_FIELD_OFFSET(LoginResponse, _impl_.reslut_)>(
+          reinterpret_cast<char*>(&_impl_.reslut_),
+          reinterpret_cast<char*>(&other->_impl_.reslut_));
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata LoginResponse::GetMetadata() const {

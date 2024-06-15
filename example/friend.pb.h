@@ -352,13 +352,13 @@ class GetFriendListRequest final :
   enum : int {
     kUseridFieldNumber = 1,
   };
-  // int32 userid = 1;
+  // uint32 userid = 1;
   void clear_userid();
-  int32_t userid() const;
-  void set_userid(int32_t value);
+  uint32_t userid() const;
+  void set_userid(uint32_t value);
   private:
-  int32_t _internal_userid() const;
-  void _internal_set_userid(int32_t value);
+  uint32_t _internal_userid() const;
+  void _internal_set_userid(uint32_t value);
   public:
 
   // @@protoc_insertion_point(class_scope:RPC.GetFriendListRequest)
@@ -369,7 +369,7 @@ class GetFriendListRequest final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    int32_t userid_;
+    uint32_t userid_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -702,22 +702,22 @@ inline void ResultCode::set_allocated_errmsg(std::string* errmsg) {
 
 // GetFriendListRequest
 
-// int32 userid = 1;
+// uint32 userid = 1;
 inline void GetFriendListRequest::clear_userid() {
-  _impl_.userid_ = 0;
+  _impl_.userid_ = 0u;
 }
-inline int32_t GetFriendListRequest::_internal_userid() const {
+inline uint32_t GetFriendListRequest::_internal_userid() const {
   return _impl_.userid_;
 }
-inline int32_t GetFriendListRequest::userid() const {
+inline uint32_t GetFriendListRequest::userid() const {
   // @@protoc_insertion_point(field_get:RPC.GetFriendListRequest.userid)
   return _internal_userid();
 }
-inline void GetFriendListRequest::_internal_set_userid(int32_t value) {
+inline void GetFriendListRequest::_internal_set_userid(uint32_t value) {
   
   _impl_.userid_ = value;
 }
-inline void GetFriendListRequest::set_userid(int32_t value) {
+inline void GetFriendListRequest::set_userid(uint32_t value) {
   _internal_set_userid(value);
   // @@protoc_insertion_point(field_set:RPC.GetFriendListRequest.userid)
 }

@@ -1,0 +1,8 @@
+8:50:42 => [error] first log message!
+8:50:42 => [error] /mprpc/MPRPC/example/callee/friendservice.cc:main:45
+8:50:42 => [info] service_name:FriendServiceRpc
+8:50:42 => [info] method_name:GetFriendList
+
+git config --global user.name "Chris_Song901"
+git config --global user.email "2222743@mail.dhu.edu.cn"
+git config --global user.password "123456"

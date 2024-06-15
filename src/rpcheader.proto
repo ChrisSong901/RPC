@@ -1,5 +1,6 @@
 syntax="proto3";
-package RPC;
+
+package mprpc;
 
 message RpcHeader
 {
