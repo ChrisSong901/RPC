@@ -9,4 +9,12 @@
 
 直接运行autobuild.sh（已加上可执行权限）执行来生成可执行文件。  
 成功生成后进入bin目录，先启动服务器再启动客户端即可测试  
+## 开发环境
+Windows Docker Desktop:
 
+  Ubuntu:22.04 (docker容器)
+  g++ 11.4.0
+  cmake 3.29.0
+  muduo
+  protobuf
+  zookeeper环境 (docker容器)
