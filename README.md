@@ -15,7 +15,7 @@
     muduo
     protobuf
     zookeeper环境 (docker容器)
-##前置准备
+## 前置准备
   需要在test.conf正确配置zookpper的ip和端口
 ![zookeeper_ip](https://github.com/ChrisSong901/RPC/assets/172186531/dc5d33c3-a267-4669-8efc-3208255cb16a)
 
