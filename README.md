@@ -28,6 +28,8 @@
     #启动服务端
     cd ./bin
     ./provider -i test.conf
+![zookeeper_ip](https://github.com/ChrisSong901/RPC/assets/172186531/5676db5a-624d-4c9d-98e8-9ff6b14cd0cf)
+![rpc_test](https://github.com/ChrisSong901/RPC/assets/172186531/8793335c-3e6e-4afe-920f-10b55464adb8)
 
 ## 基本过程
 ![rpc](https://github.com/ChrisSong901/RPC/assets/172186531/edd71ef2-6727-445e-9f4e-c459f9018c35)
