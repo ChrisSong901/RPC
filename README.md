@@ -18,3 +18,6 @@
     muduo
     protobuf
     zookeeper环境 (docker容器)
+
+## 基本过程
+![rpc](https://github.com/ChrisSong901/RPC/assets/172186531/edd71ef2-6727-445e-9f4e-c459f9018c35)
